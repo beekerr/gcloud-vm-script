@@ -33,12 +33,12 @@ echo ''
 
 if [ $linux = "-u" ] ; then
   echo 'Now configuring your Ubuntu.'
-  wget https://github.com/eerolat/setup-google-linux/raw/master/doubuntu.sh
+  wget https://raw.githubusercontent.com/beekerr/gcloud-vm-script/main/install-ubuntu?token=AKT2B5CNVJHYZPJMQCYY4PC7PZBGY
   sh doubuntu.sh $username $password
   rm doubuntu.sh
 elif [ $linux = "-d" ] ; then
   echo 'Now configuring your Debian.'
-  wget https://github.com/eerolat/setup-google-linux/raw/master/dodebian.sh
+  wget https://raw.githubusercontent.com/beekerr/gcloud-vm-script/main/install-debian.sh?token=AKT2B5CCNPWVOWPMYDBE6ZK7PZBUG
   sh dodebian.sh $username $password
   rm dodebian.sh
 else
