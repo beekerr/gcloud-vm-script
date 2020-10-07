@@ -25,6 +25,6 @@ sudo apt-get install -y synaptic
 
 touch ~/.Xresources
 
-sudo adduser  --disabled-password --gecos "GUI User" $1
+sudo adduser  --disabled-password --gecos "NPD SEO Team" $1
 echo "$1:$2" | sudo chpasswd
 sudo /usr/sbin/usermod -aG sudo $1
