@@ -34,13 +34,13 @@ echo ''
 if [ $linux = "-u" ] ; then
   echo 'Now configuring your Ubuntu.'
   wget https://raw.githubusercontent.com/beekerr/gcloud-vm-script/main/install-ubuntu.sh
-  sh doubuntu.sh $username $password
-  rm doubuntu.sh
+  sh install-ubuntu.sh $username $password
+  rm install-ubuntu.sh
 elif [ $linux = "-d" ] ; then
   echo 'Now configuring your Debian.'
   wget https://raw.githubusercontent.com/beekerr/gcloud-vm-script/main/install-debian.sh
-  sh dodebian.sh $username $password
-  rm dodebian.sh
+  sh install-debian.sh $username $password
+  rm install-debian.sh
 else
   echo 'Error. Can not start configuring your Linux.'
 fi
